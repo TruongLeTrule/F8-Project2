@@ -10,3 +10,81 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
+/* Common */
+.content {
+  min-width: 1170px;
+  margin: 0 135px;
+}
+
+a {
+  text-decoration: none;
+  color: #171100;
+}
+
+.btn {
+  display: flex;
+  width: 144px;
+  height: 50px;
+  background: #171100;
+  border-radius: 24.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  padding: 47px 0 13px;
+  position: sticky;
+  top: 0px;
+  background: #fffcf4;
+}
+
+.navbar .content {
+  display: flex;
+}
+
+.navbar .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  margin-left: 512px;
+}
+
+.navbar .nav-items a {
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #171100;
+}
+
+.navbar .nav-items a:hover {
+  position: relative;
+  font-weight: 600;
+  color: #171100;
+}
+
+.navbar .nav-items a:hover::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  width: 12px;
+  height: 1.8px;
+  border-radius: 3px;
+  background-color: #171100;
+}
+
+.navbar .cta-btn {
+  margin-left: auto;
+}
+
+.navbar .cta-btn a {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.navbar .cta-btn:hover {
+  background-color: #808080;
+}

@@ -16,17 +16,80 @@
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
   </head>
   <body style="height: 10000px">
-    <nav class="navbar">
-      <div class="content">
-        <img src="./assets/images/logo.svg" alt="Lesson." class="logo" />
-        <div class="nav-list">
-          <div class="nav-items"><a href="#!">Home</a></div>
-          <div class="nav-items"><a href="#!">Courses</a></div>
-          <div class="nav-items"><a href="#!">Pricing</a></div>
-          <div class="nav-items"><a href="#!">Reviews</a></div>
+    <!-- Header -->
+    <header class="header fix">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="main-content">
+          <div class="body">
+            <!-- Logo -->
+            <img 
+              src="./assets/images/logo.svg" 
+              alt="Lesson."
+              class="logo" 
+            />
+
+            <ul>
+              <li class="active"><a href="#!">Home</a></li>
+              <li><a href="#!">Courses</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Reviews</a></li>
+            </ul>
+
+            <div class="action">
+              <a href="#!" class="btn action-btn">Sign Up</a>
+            </div>
+          </div>
         </div>
-        <div class="btn cta-btn"><a href="#!">Sign Up</a></div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="main-content">
+          <!-- Hero left -->
+          <div class="media-block">
+            <img
+              src="./assets/images/hero_info_img.JPG"
+              alt="Learn without limits and spread knowledge."
+              class="desc-img"
+            />
+
+            <div class="hero-sumary">
+              <ul>
+                <li>
+                    <div class="circle"><img src="./assets/images/uiux.svg" alt="UI/UX Design"></div>
+                    <div class="course-desc">
+                      <div class="number">20 Courses</div>
+                      <div class="course-name">UI/UX Design</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle"><img src="./assets/images/development.svg" alt="Development"></div>
+                    <div class="course-desc">
+                      <div class="number">20 Courses<div>
+                      <div class="course-name">Development</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle"><img src="./assets/images/marketing.svg" alt="Marketing"></div>
+                    <div class="course-desc">
+                      <div class="number">30 Courses</div>
+                      <div class="course-name">Marketing</div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hero right -->
+          <div class="hero-content">
+            <h1 class="heading-lv1">Learn without limits and spread knowledge.</h1>
+          </div>
+        </div>
       </div>
-    </nav>
+    </main>
   </body>
 </html>

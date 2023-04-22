@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-heading: Sen, sans-serif;
+  --primary-color: #ffb900;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -12,6 +17,16 @@ body {
 }
 
 /* Common */
+h1.heading-lv1 {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: #130606;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -26,13 +41,26 @@ a {
 
 .btn {
   display: flex;
-  padding: 0 16px;
+  padding: 0 41px;
   min-width: 144px;
-  height: 50px;
+  line-height: 50px;
   background: #171100;
-  border-radius: 24.5px;
+  border-radius: 999px;
   justify-content: center;
   align-items: center;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+p.desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
 }
 
 /* Header */
@@ -98,23 +126,20 @@ a {
   color: #ffffff;
 }
 
-.navbar .action-btn:hover {
-  background-color: #282525;
-}
-
 /* Hero */
 .hero {
-  padding-top: 53px;
+  padding: 52px 0 65px;
   background: #fffcf4;
 }
 
-.hero .main-content {
+.hero .body {
   display: flex;
-  justify-content: space-between;
 }
 
+/* Hero left block */
 .hero .media-block {
   position: relative;
+  width: 48%;
 }
 
 .hero .media-block .desc-img {
@@ -124,34 +149,23 @@ a {
   border-radius: 20px;
 }
 
-.hero .media-block .number {
-  font-weight: 400;
-  font-size: 1.4rem;
-  color: #5f5b53;
-}
-
-.hero .media-block .course {
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: #171100;
-}
-
 .hero .hero-sumary {
-  position: absolute;
-  padding: 24px 58px 24px 24px;
+  width: 270px;
+  padding: 28px 24px;
   border-radius: 12px;
+  position: absolute;
   bottom: 48px;
   left: 300px;
   background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
 }
 
-.hero-sumary li {
+.hero-sumary .item {
   display: flex;
-  margin-top: 22px;
 }
 
-.hero-sumary li:first-child {
-  margin-top: 0;
+.hero-sumary .item + .item {
+  margin-top: 22px;
 }
 
 .hero-sumary .circle {
@@ -160,32 +174,106 @@ a {
   height: 48px;
   align-items: center;
   justify-content: center;
-  margin-right: 29px;
+  margin-right: 16px;
   border-radius: 50%;
 }
 
-.hero-sumary li:first-child .circle {
+.hero-sumary .item:first-child .circle {
   background-color: #fff9e8;
 }
 
-.hero-sumary li:nth-child(2) .circle {
+.hero-sumary .item:nth-child(2) .circle {
   background: #fcefff;
 }
 
-.hero-sumary li:last-child .circle {
+.hero-sumary .item:last-child .circle {
   background: #ebeaff;
 }
 
-.hero-sumary .number {
+.hero-sumary .label {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 26px;
   color: #5f5b53;
 }
 
-.hero-sumary .course-name {
+.media-block .title {
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 30px;
   color: #171100;
+}
+
+/* Hero right block */
+.hero .content-block {
+  width: 52%;
+  margin: 64px 0 0 230px;
+}
+
+.content-block .heading-lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+
+.content-block .desc {
+  margin-top: 22px;
+}
+
+.content-block .cta-group {
+  display: flex;
+  margin: 38px 0 48px;
+}
+
+.content-block .hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  padding: 0 33px;
+  background: var(--primary-color);
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.content-block .watch-video {
+  margin-left: 28px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.watch-video .icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.watch-video span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #171100;
+}
+
+.content-block .stats {
+  margin-top: 8px;
+}
+
+.content-block strong {
+  padding: 0 9px 0 28px;
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: #171100;
+}
+
+.content-block p strong:first-of-type {
+  padding-left: 0;
 }

@@ -48,14 +48,16 @@ a {
 }
 
 .btn {
-  display: flex;
-  padding: 0 41px;
+  display: inline-block;
+  padding: 0 30px;
   min-width: 144px;
   line-height: 50px;
   background: #171100;
   border-radius: 999px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -422,7 +424,6 @@ p.desc {
 .popular .courses-item .book-btn:hover {
   background: #ffb900;
   transition: background-color 0.158s ease;
-  cursor: pointer;
 }
 
 /* Feedback */
@@ -503,4 +504,74 @@ p.desc {
   font-size: 2.6rem;
   line-height: 1.54;
   color: #ffffff;
+}
+
+/* Features */
+.features {
+  margin-top: 135px;
+  padding: 65px;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .img-group {
+  display: flex;
+  gap: 30px;
+}
+
+.features .image {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .image:first-child {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.features .action-btn {
+  margin-top: 32px;
+  min-width: 137px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Features block 2 */
+.features.block-2 {
+  margin-top: 70px;
+}
+
+.features.block-2 .body {
+  flex-direction: row-reverse;
+}
+
+.features.block-2 .content {
+  width: 49%;
+}
+
+.features.block-2 .image {
+  margin-top: 0;
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+  object-fit: cover;
 }
